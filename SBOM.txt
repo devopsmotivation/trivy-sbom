@@ -1,0 +1,69 @@
+
+
+Trivy - Simplifying Software Security
+------------------------------------------------------
+
+Trivy is like a detective for your software, especially when it comes to Docker images. 
+Its main job is to make sure that the software you're using doesn't have any hidden vulnerabilities or security issues. 
+Trivy is like the superhero that scans your software packages, identifies potential threats, and keeps your applications safe.
+
+How Trivy Works:
+------------------
+
+Investigation: 
+------------------
+Trivy takes a close look at your Docker images. 
+Think of Docker images like treasure chests full of software components.
+
+Identification: 
+------------------
+Trivy examines each piece of software inside the Docker image and figures out what it is. 
+It's like sorting through the treasure to see if there's anything dangerous.
+
+Vulnerability Check: 
+------------------
+Trivy is not just any detective; it's a security detective. It checks each component for known vulnerabilities. 
+These vulnerabilities are like secret traps that bad actors might exploit.
+
+Reporting: 
+------------------
+Once the investigation is complete, Trivy reports back. 
+It tells you if there are any vulnerabilities and provides details on what they are and how severe they might be.
+
+SBOM Creation:
+------------------
+Now, let's talk about SBOM - the Software Bill of Materials. 
+It's like the receipt that tells you exactly what ingredients are in your software.
+Trivy is not just about finding problems; it's also about transparency and accountability.
+
+Trivy helps you create an SBOM by listing out all the ingredients (software components) in your Docker image and their versions. 
+It's like giving you a complete shopping list for your software.
+
+Why SBOM Matters:
+------------------
+Know What You Have: With an SBOM, you know exactly what's inside your software. 
+It's like having a recipe for your favorite dish – you know every ingredient.
+
+Easy Updates: 
+------------------
+If there's a problem or a new, better version of a component is available, you can easily update it because you know exactly what to change.
+Security Assurance:
+------------------
+By regularly using Trivy to create SBOMs, you make sure your software stays safe. It's like having regular health check-ups for your applications.
+
+In simple terms, Trivy is your security guard and detective rolled into one. It not only keeps your software safe but also provides you with a clear list of what's inside – your SBOM. So, you can think of Trivy as your software's personal superhero, ensuring it stays healthy and secure!
+
+
+commands : 
+
+1. brew install trivy
+2. docker pull nginx:latest
+3. trivy image nginx:latest
+3. trivy image --format spdx-json --output nginx-sbom.json nginx:latest
+
+
+Links :
+https://github.com/aquasecurity/trivy
+https://aquasecurity.github.io/trivy/v0.46/getting-started/installation/
+https://aquasecurity.github.io/trivy/v0.33/docs/sbom/
+
