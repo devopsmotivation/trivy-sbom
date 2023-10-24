@@ -17,7 +17,7 @@ Commands :
 
 Links :
 -------------
-https://github.com/aquasecurity/trivy
-https://aquasecurity.github.io/trivy/v0.46/getting-started/installation/
-https://aquasecurity.github.io/trivy/v0.33/docs/sbom/
+1. https://github.com/aquasecurity/trivy
+2. https://aquasecurity.github.io/trivy/v0.46/getting-started/installation/
+3. https://aquasecurity.github.io/trivy/v0.33/docs/sbom/
 
